@@ -31,8 +31,8 @@ void LZ78::codifica(string palavra)
 
         else{
             NoDic* p= new NoDic();
-            p->c=c;
-            p->indice=getIndice(busca);
+            p->setC(c);
+            p->setIndice(getIndice(busca));
             codificacao.push_back(p);
             dicionario.push_back(busca+c);
             busca="";
@@ -50,7 +50,7 @@ void LZ78::imprimeDicionario(){
 void LZ78::imprimeCodificacao(){
     cout<< "IMPRIMINDO CODIFICACAO" <<endl;
     for(int i=0;i<codificacao.size();i++)
-        cout<< "(" << codificacao[i]->indice<< ", " << codificacao[i]->c << ")" << endl;
+        cout<< "(" << codificacao[i]->getIndice()<< ", " << codificacao[i]->getC() << ")" << endl;
 
 }
 

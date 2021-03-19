@@ -3,9 +3,15 @@
 
 class NoDic
 {
-public:
+private:
     int indice;
     char c;
+
+public:
+    int getIndice(){ return indice;};
+    void setIndice(int val) { indice=val;};
+    void setC(char val) { c=val;};
+    char getC(){ return c;};
 
 };
 

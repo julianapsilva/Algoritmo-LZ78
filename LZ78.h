@@ -18,9 +18,6 @@ public:
     void imprimeDicionario();
     void imprimeCodificacao();
 
-
-
-
 };
 
 
