@@ -12,7 +12,7 @@ string leArquivoTexto(string arquivo)
     {
         while(getline(arq, str))
         {
-            aux+=str;;
+            aux+=str;
         }
     }
     else
