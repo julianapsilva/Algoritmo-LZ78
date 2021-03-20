@@ -7,18 +7,18 @@ using namespace std;
 string leArquivoTexto(string arquivo)
 {
     ifstream arq(arquivo);
-    string str;
+    string str,aux;
     if(arq.is_open())
     {
         while(getline(arq, str))
         {
-            str+=str;
+            aux+=str;;
         }
     }
     else
         cerr << "ERRO: O arquivo nao pode ser aberto!" << endl;
 
-    return str;
+    return aux;
 }
 
 
